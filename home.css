@@ -492,20 +492,13 @@ margin: -.2 1.8em 0;
   cursor:pointer;  
 
 }
-.controls .controls-row {
-  display: flex;
-  overflow: hidden;
-justify-content: space-between;
-}
+
 .left {
 padding:0px 40px;
 font-size: 1.5rem;
 }
 .right {
-text-align: right;
-
-
-
+left: 300%;
   font-size: 1.5rem;
 }
 .left .fas  {
@@ -806,6 +799,7 @@ padding: 0 auto;
     display:flex;
     justify-content: center;
     align-items: center;
+
 
 }
 

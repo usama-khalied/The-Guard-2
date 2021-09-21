@@ -82,17 +82,17 @@ content2.style.transform = "translateY(0px)";
 
  }
 });
-sc
+
 window.addEventListener('scroll',()=>{
     let content3 = document.querySelector('.container-post-cards-wrapper');
     let contentPosition3 = content3.getBoundingClientRect().top;
     let screenPosition3 = window.innerHeight / 1.6;
     if(contentPosition3<screenPosition3) {
-        content3.classList.add("active");
+        content3.classList.add("shadow");
 
     }
  else {   
-    content3.classList.remove("active");
+    content3.classList.remove("shadow");
 
  }
 });
