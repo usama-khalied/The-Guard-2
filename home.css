@@ -314,6 +314,7 @@ color:var(--clr-background);
 /*Our team members*/
 .our-guards {
   background-color: var(--clr-white-fonts);
+ 
 }
 #team-section {
   padding-top: 7rem;
@@ -344,6 +345,9 @@ color:var(--clr-background);
   width: 100%;
   box-sizing: border-box;
   align-items: center;
+  transform: translateY(100px);
+  transition: 2s all;
+  opacity: 0;
 }
 .speakers {
   box-sizing: border-box;
@@ -352,6 +356,7 @@ color:var(--clr-background);
   justify-content: space-around;
   align-items: center;
   margin-bottom: 5rem;
+
 }
 .speaker-image {
   border-radius: 50%;
@@ -951,7 +956,10 @@ border: 1px solid var(--clr-white-fonts);
   margin: 0 auto;
   justify-content: center;
   width: 80%;
+  opacity: 0;
 
+  transform: translateY(130px);
+  transition: .5s all ease;
   
 }
 .service-row  img{
@@ -1405,6 +1413,9 @@ background-color: var(--clr-primary);
 /* -- animation css --- */
 .active {
   transform: translateY(0px);
-
+  opacity: 1;
+}
+.shadow {
+  transform: translateY(0);
   opacity: 1;
 }
