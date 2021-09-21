@@ -487,17 +487,25 @@ margin: -.2 1.8em 0;
   margin: 0em 0 0;
 }
 .controls {
-  position: absolute;
+   position: absolute;
   top: 50%;
-  cursor:pointer; 
+  cursor:pointer;  
+
+}
+.controls .controls-row {
+  display: flex;
+  overflow: hidden;
+justify-content: space-between;
 }
 .left {
 padding:0px 40px;
 font-size: 1.5rem;
 }
 .right {
-  position: absolute;
-  left: 700px;
+text-align: right;
+
+
+
   font-size: 1.5rem;
 }
 .left .fas  {
@@ -526,6 +534,27 @@ font-size: 1.5rem;
 .scrollFade--animate {
   transition: opacity 3s ease-in-out;
 }
+@media (max-width: 1200px) {
+  .container-6 {
+flex-direction: column;
+padding: 0 auto;
+  }
+  .container-6 .content {
+
+    width: 100vw;
+    
+    margin: 0 auto 10rem;
+  }
+  .curesol {
+
+   width: 100%;
+   margin: 0 0 3em;
+ 
+  
+
+  }
+}
+ 
 /* --------------------------------------------------------Accrediation section------------------------------------------------------------ */
 .accre-sec{
   text-align: center;
@@ -777,6 +806,7 @@ font-size: 1.5rem;
     display:flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .container-post-cards{
@@ -794,7 +824,11 @@ font-size: 1.5rem;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 80%;
+    opacity: 0;
+    transform: translateY(130px);
+    transition: .5s all ease;
 }
+
 .heading-one-container:hover
 {
     color:var(--clr-white-fonts)

@@ -37,7 +37,7 @@ left.addEventListener('click', function () {
 });
 
 
-// scroll animation start --// -- prizing section
+// scroll animation start --// --  prizing section
 window.addEventListener('scroll',()=>{
     let content = document.querySelector('.price-cards-wrapper');
     let contentPosition = content.getBoundingClientRect().top;
@@ -79,6 +79,20 @@ content2.style.transform = "translateY(0px)";
  else {   
      content2.style.opacity="0";
      content2.style.transform = "translateY(150px)";
+
+ }
+});
+sc
+window.addEventListener('scroll',()=>{
+    let content3 = document.querySelector('.container-post-cards-wrapper');
+    let contentPosition3 = content3.getBoundingClientRect().top;
+    let screenPosition3 = window.innerHeight / 1.6;
+    if(contentPosition3<screenPosition3) {
+        content3.classList.add("active");
+
+    }
+ else {   
+    content3.classList.remove("active");
 
  }
 });
