@@ -19,7 +19,7 @@ function closeMenu() {
 
 const slider = document.querySelector('.slider');
 const left = document.querySelector('.left');
-const slide = document.querySelector('.slide')
+const slider = document.querySelector('.slider')
 const right = document.querySelector('.right');
 var sectionIndex = 0;
 right.addEventListener('click', function () {
@@ -30,7 +30,7 @@ right.addEventListener('click', function () {
     else {
         sectionIndex + 2;
     }
-    slider.style.transform = "translate(" + (sectionIndex = sectionIndex + 1) * -33 + "%)";
+    slider.style.transform = "translate(" + (sectionIndex = sectionIndex + 2) * -34 + "%)";
 })
 left.addEventListener('click', function () {
     slider.style.transform = "translate(0%)";
